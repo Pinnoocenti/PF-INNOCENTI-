@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Mulish', sans-serif
+}
+main{
+    font-family: 'Mulish', sans-serif;
+}
+.tueste{
+    padding: 0;
+    margin: 0;
+    background-image: url("../IMAGENES/PPT03-TUESTE-identidad_page-0003.jpg");
+    background-position: center;
+    background-size:cover;
+    height: 600px;
+}
+.navbar{
+    padding: 1.5rem 6rem 0.25rem 2rem;
+}
+.navbar-brand{
+    margin: 0;
+}
+.logo{
+    width: 75px;
+    border-radius: 50%;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.nav-link{
+    margin: 40px;
+    padding: 15px;
+    font-size:medium;
+}
+.nav-item{
+    font-weight: normal;
+}
+
+.nav-item:hover{
+    font-weight:bold;
+}
+.nav-link:hover{
+    background-color: #C1582F;
+    font-size: large;
+}
+.formulario{
+    background-image: url(../IMAGENES/PPT03-TUESTE-identidad_page-0009-chico.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;   
+}
+.formulario section{
+    position: relative;
+}
+.formulario section div{
+    flex-direction: row;
+    opacity: 0.7;
+}
+.formulario h2{
+    font-size: xx-large;
+    font-weight:bolder;
+    text-align: center;
+    
+}
+.formulario form{
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.8  ; 
+}
+.formulario form div input{
+    width: 300px;
+    height: 30px;
+    border: black solid 2px;
+}
+.formulario form div textarea{
+    border: black solid 2px;
+}
+.formulario form ::placeholder{
+    color: black;
+    font-size: large;
+}
+.ubicacion{
+    background-color:#C1582F;    
+}
+.ubicacion_div{
+    padding: 40px;
+    align-items: center;
+    justify-content:center;
+    display: flex;
+}
+.ubicacion_div_direccion{
+    margin: 20px;
+}
+.ubicacion a img{
+    border: solid 2px black;
+}
+
+.footer{
+    height: 60px;
+    background-color: #DFCFB7;
+}
+.footer img{
+    text-align: center;
+    width: 35px;
+    display: block;
+    margin: 0px auto;
+    position: relative;
+    top: 15px;
+}
+.menu{
+    background-color: #DFCFB7;
+}
+.fotoMenu{
+    width: 450px;
+    padding: 5px;
+    height: 600px;
+}
+.carta{  
+    width:max-content;
+    display: grid;
+    background-color: #DFCFB7;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "good good good good good good"
+      "desayuno desayuno sinCafeFrio sinCafeFrio sinCafeCaliente sinCafeCaliente"
+      "sandwiches sandwiches sandwiches tostones tostones tostones"
+      "laminados laminados laminados pasteleria pasteleria pasteleria"
+      "cafe1 cafe1 cafe2 cafe2 conAlcohol conAlcohol";
+} 
+.good{ grid-area: good;
+    text-align: center;
+}
+.desayuno{ grid-area: desayuno; 
+    text-align: center;
+} 
+.sinCafeFrio{ grid-area: sinCafeFrio; 
+    text-align: center;
+} 
+.sinCafeCaliente{ grid-area: sinCafeCaliente; 
+    text-align: center;
+}  
+.sandwiches{ grid-area: sandwiches; 
+    text-align: center;
+} 
+.tostones{ grid-area: tostones; 
+    text-align: center;
+}  
+.laminados{ grid-area: laminados; 
+    text-align: center;
+}  
+.pasteleria{ grid-area: pasteleria; 
+    text-align: center;
+}  
+.cafe1{ grid-area: cafe1; 
+    text-align: center;
+}  
+.cafe2{ grid-area: cafe2; 
+    text-align: center;
+} 
+.conAlcohol{ grid-area: conAlcohol; 
+    text-align: center;
+}
+      
+
+
+
+
+
+
+
+@media (max-width: 1232px){
+    .tueste{
+        height: 700px;
+    }
+    .navbar{
+        padding: 1.5rem 1rem 0.25rem 1rem;
+    }
+    .nav-link{
+        font-size:x-large;
+        padding: 10px;
+        margin: 10px;
+    }
+    .ubicacion_div{
+        height: 1150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ubicacion_div_direccion{
+        width: 75%;
+        text-align: center;
+    }
+    .ubicacion_div_direccion_mapa{
+        width: 95%;
+    }
+    .logo{
+        width: 70px;
+    }
+    .nav-item:hover{
+        font-weight:bolder;
+    }
+    .nav-link:hover{
+        font-weight: bolder;
+        font-size:xx-large;
+    }
+    .fotoMenu{
+        width: 100%;
+    }
+    .carta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+
+    
+
+        
+}
