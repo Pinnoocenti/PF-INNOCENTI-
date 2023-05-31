@@ -1,0 +1,17 @@
+.ubicacion{
+    background-color: $terracota; 
+    .ubicacion_div{
+        padding: 40px;
+        align-items: center;
+        justify-content:center;
+        display: flex;
+        .ubicacion_div_direccion{
+            margin: 20px;
+        }
+        a {
+            img{
+            border: solid 2px black;
+            }
+        }
+    }   
+}

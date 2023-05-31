@@ -1,0 +1,57 @@
+.menu{
+    background-color: $beige;
+    .carta{
+        display: grid;
+        background-color: $beige;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "good good good good good good"
+          "desayuno desayuno sinCafeFrio sinCafeFrio sinCafeCaliente sinCafeCaliente"
+          "sandwiches sandwiches sandwiches tostones tostones tostones"
+          "laminados laminados laminados pasteleria pasteleria pasteleria"
+          "cafe1 cafe1 cafe2 cafe2 conAlcohol conAlcohol";
+        .good{ grid-area: good;
+            text-align: center;
+        }
+        .desayuno{ grid-area: desayuno; 
+            text-align: center;
+        } 
+        .sinCafeFrio{ grid-area: sinCafeFrio; 
+            text-align: center;
+        } 
+        .sinCafeCaliente{ grid-area: sinCafeCaliente; 
+            text-align: center;
+        }  
+        .sandwiches{ grid-area: sandwiches; 
+            text-align: center;
+        } 
+        .tostones{ grid-area: tostones; 
+            text-align: center;
+        }  
+        .laminados{ grid-area: laminados; 
+            text-align: center;
+        }  
+        .pasteleria{ grid-area: pasteleria; 
+            text-align: center;
+        }  
+        .cafe1{ grid-area: cafe1; 
+            text-align: center;
+        }  
+        .cafe2{ grid-area: cafe2; 
+            text-align: center;
+        } 
+        .conAlcohol{ grid-area: conAlcohol; 
+            text-align: center;
+        }
+        .fotoMenu{
+            width: 450px;
+            padding: 5px;
+            height: 600px;
+        }   
+    }
+}

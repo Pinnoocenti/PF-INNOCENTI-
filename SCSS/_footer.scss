@@ -1,0 +1,19 @@
+.footer{
+    height: 60px;
+    background-color: $camel;
+    a{
+        img{
+        text-align: center;
+        width: 35px;
+        display: block;
+        margin: 0px auto;
+        position: relative;
+        top: 15px;
+        transition: all 2s;
+        }
+        :hover{
+            transform: scale(1.15, 1.15);
+
+        }
+    }
+}

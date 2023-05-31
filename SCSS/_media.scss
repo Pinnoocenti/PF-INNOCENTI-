@@ -1,0 +1,49 @@
+@media (max-width: 1232px){
+    .tueste{
+        height: 600px;
+        .navbar{
+            padding: 1.5rem 1rem 0.25rem 1rem;
+            .logo{
+                width: 70px;
+            }
+            .nav-item{
+                transition: all 2s;
+                :hover{
+                background-color: $terracota;
+                transform: scale(1.1, 1.1);
+                }
+                .nav-link{
+                    padding: 10px;
+                    margin: 10px;
+                }
+            }              
+        }   
+    }
+    .ubicacion_div{
+        height: 1150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .ubicacion_div_direccion{
+            width: 75%;
+            text-align: center;
+            .ubicacion_div_direccion_mapa{
+                width: 95%;
+            }
+        }
+    }      
+    .menu{
+        .carta{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .fotoMenu{
+                width: 100%;
+            }
+        }
+
+    }
+        
+}
+
