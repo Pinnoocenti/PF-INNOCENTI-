@@ -1,0 +1,28 @@
+.inicio{
+    background-color: $beige;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .carousel-inner{
+        padding: 2px;
+        margin: 20px;
+        width: 500px;
+        height: 300px;
+        border: solid 2px $marron;
+        background-color: $camel;
+        
+        .carousel-item{
+            justify-content: center;
+            text-align: center;
+
+            .fotoInicio{
+                text-align: center;
+                max-height: 300px;
+                
+            }
+
+        }
+        
+    }
+}

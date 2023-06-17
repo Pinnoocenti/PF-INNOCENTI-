@@ -1,19 +1,23 @@
 .footer{
-    height: 60px;
+    height: 60;
     background-color: $camel;
+    font-family: SmallTypeWriting;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
     a{
+        margin-right:10% ;
         img{
-        text-align: center;
-        width: 35px;
-        display: block;
-        margin: 0px auto;
-        position: relative;
-        top: 15px;
+        width: 30px;        
         transition: all 2s;
         }
         :hover{
-            transform: scale(1.15, 1.15);
+            transform: scale(1.1, 1.1);
 
         }
+        
     }
 }

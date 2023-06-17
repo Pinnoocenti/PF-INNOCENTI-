@@ -11,6 +11,7 @@ main {
   font-family: 'Mulish', sans-serif; }
 
 .tueste {
+  font-family: PPEditorialNew-Ultralight;
   padding: 0;
   margin: 0;
   background-image: url("../IMAGENES/PPT03-TUESTE-identidad_page-0003.jpg");
@@ -86,13 +87,12 @@ main {
   .menu .carta {
     display: grid;
     background-color: #DFCFB7;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "good good good good good good" "desayuno desayuno sinCafeFrio sinCafeFrio sinCafeCaliente sinCafeCaliente" "sandwiches sandwiches sandwiches tostones tostones tostones" "laminados laminados laminados pasteleria pasteleria pasteleria" "cafe1 cafe1 cafe2 cafe2 conAlcohol conAlcohol"; }
+    grid-template-areas: "good good" "desayuno pasteleria" "tostones sandwiches" "sinCafeCaliente sinCafeFrio" "cafe conAlcohol"; }
     .menu .carta .good {
       grid-area: good;
       text-align: center; }
@@ -111,42 +111,144 @@ main {
     .menu .carta .tostones {
       grid-area: tostones;
       text-align: center; }
-    .menu .carta .laminados {
-      grid-area: laminados;
-      text-align: center; }
     .menu .carta .pasteleria {
       grid-area: pasteleria;
       text-align: center; }
-    .menu .carta .cafe1 {
-      grid-area: cafe1;
-      text-align: center; }
-    .menu .carta .cafe2 {
-      grid-area: cafe2;
+    .menu .carta .cafe {
+      grid-area: cafe;
       text-align: center; }
     .menu .carta .conAlcohol {
       grid-area: conAlcohol;
       text-align: center; }
     .menu .carta .fotoMenu {
-      width: 450px;
+      width: 600px;
       padding: 5px;
-      height: 600px; }
+      height: 700px; }
 
 .footer {
-  height: 60px;
-  background-color: #C3B092; }
-  .footer a img {
-    text-align: center;
-    width: 35px;
-    display: block;
-    margin: 0px auto;
-    position: relative;
-    top: 15px;
-    transition: all 2s; }
-  .footer a :hover {
-    transform: scale(1.15, 1.15); }
+  height: 60;
+  background-color: #C3B092;
+  font-family: SmallTypeWriting;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+  .footer a {
+    margin-right: 10%; }
+    .footer a img {
+      width: 30px;
+      transition: all 2s; }
+    .footer a :hover {
+      transform: scale(1.1, 1.1); }
 
-@media (max-width: 1232px) {
+.inicio {
+  background-color: #DFCFB7;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .inicio .carousel-inner {
+    padding: 2px;
+    margin: 20px;
+    width: 500px;
+    height: 300px;
+    border: solid 2px #7C5F34;
+    background-color: #C3B092; }
+    .inicio .carousel-inner .carousel-item {
+      justify-content: center;
+      text-align: center; }
+      .inicio .carousel-inner .carousel-item .fotoInicio {
+        text-align: center;
+        max-height: 300px; }
+
+@font-face {
+  font-family: SmallTypeWriting;
+  src: url(../FUENTES/SmallTypeWriting.ttf); }
+
+@font-face {
+  font-family: PPEditorialNew-Ultralight;
+  src: url(../FUENTES/PPEditorialNew-Ultralight.otf); }
+
+@font-face {
+  font-family: Mulish-Italic-VariableFont_wght;
+  src: url(../FUENTES/Mulish-Italic-VariableFont_wght.ttf); }
+
+.fondo {
+  background-color: #DFCFB7; }
+  .fondo .nosotros {
+    background-color: #DFCFB7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "entrada titulo video" "parada texto cartel"; }
+    .fondo .nosotros .entrada {
+      grid-area: entrada;
+      justify-content: center; }
+    .fondo .nosotros .titulo {
+      grid-area: titulo;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      margin: 5px;
+      padding: 5px; }
+      .fondo .nosotros .titulo .bienvenidos {
+        font-family: PPEditorialNew-Ultralight;
+        text-align: center;
+        font-size: xx-large;
+        width: 500px;
+        padding-top: 10px;
+        margin: 20px; }
+      .fondo .nosotros .titulo .contenido {
+        width: 450px;
+        line-height: 2;
+        margin-top: 12px;
+        padding-top: 15px;
+        text-align: center;
+        align-items: center;
+        font-size: large; }
+    .fondo .nosotros .video {
+      grid-area: video;
+      text-align: center;
+      justify-content: center; }
+    .fondo .nosotros .parada {
+      grid-area: parada;
+      text-align: center;
+      justify-content: center; }
+    .fondo .nosotros .parada img {
+      display: none; }
+    .fondo .nosotros .texto {
+      grid-area: texto;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center; }
+      .fondo .nosotros .texto .contenido {
+        width: 450px;
+        line-height: 2;
+        text-align: center;
+        font-size: large;
+        margin-top: 30px;
+        padding-top: 15px; }
+    .fondo .nosotros .cartel {
+      grid-area: cartel;
+      justify-content: center;
+      text-align: center; }
+    .fondo .nosotros .fotoNosotros {
+      height: 600px;
+      padding: 5px;
+      margin: 5px; }
+
+@media (max-width: 425px) {
   .tueste {
+    background-image: url(../IMAGENES/tuestehorizontal.jpg);
+    background-position: left;
     height: 600px; }
     .tueste .navbar {
       padding: 1.5rem 1rem 0.25rem 1rem; }
@@ -159,21 +261,76 @@ main {
           transform: scale(1.1, 1.1); }
         .tueste .navbar .nav-item .nav-link {
           padding: 10px;
-          margin: 10px; }
+          margin: 10px;
+          font-weight: bolder;
+          font-size: large; }
   .ubicacion_div {
-    height: 1150px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center; }
     .ubicacion_div .ubicacion_div_direccion {
-      width: 75%;
-      text-align: center; }
+      width: 100%;
+      text-align: center;
+      padding: 15px; }
       .ubicacion_div .ubicacion_div_direccion .ubicacion_div_direccion_mapa {
-        width: 95%; }
+        width: 100%; }
   .menu .carta {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
     .menu .carta .fotoMenu {
-      width: 100%; } }
+      width: 100%;
+      height: 100%; }
+  .formulario {
+    background-image: none;
+    background-color: #DFCFB7; }
+  .footer {
+    height: 70px;
+    align-items: center;
+    text-align: center; }
+    .footer a {
+      margin-right: 2%; }
+    .footer .vos {
+      display: none; }
+  .fondo .nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .fondo .nosotros .titulo {
+      height: 100%; }
+      .fondo .nosotros .titulo .bienvenidos {
+        width: 100%; }
+      .fondo .nosotros .titulo .contenido {
+        width: 100%;
+        margin-top: 5px;
+        padding-top: 0px; }
+      .fondo .nosotros .titulo .fotoNosotros {
+        height: 100%;
+        width: 100%;
+        margin: 10px 0px 0px 0px; }
+    .fondo .nosotros .texto {
+      height: 100%; }
+      .fondo .nosotros .texto .contenido {
+        width: 100%;
+        margin-top: 5px;
+        padding: 0px 5px 0px 5px; }
+    .fondo .nosotros .fotoNosotros {
+      height: 100%;
+      width: 100%;
+      margin: 20px 0px 0px 0px;
+      padding: 0; }
+  .inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .inicio .carousel-inner {
+      height: 100%;
+      width: 100%;
+      margin: 20px 0px; }
+      .inicio .carousel-inner .carousel-item .fotoInicio {
+        text-align: center;
+        max-width: 300px;
+        height: 200px; } }
